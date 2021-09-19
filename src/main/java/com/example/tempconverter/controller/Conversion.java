@@ -1,16 +1,19 @@
 package com.example.tempconverter.controller;
 
+import com.example.tempconverter.entity.Temperature;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/convertTemp")
 @CrossOrigin("*")
 
 public class Conversion {
 
-    @PostMapping("/")
-    public Float convertTemp(@RequestParam(name = "type_t") String type, @RequestParam("fromUnit") String fromUnit,
-                             @RequestParam(name = "data_t") float data_t){
+    @PostMapping("/convertTemp")
+    public Float convertTemp(@RequestBody Temperature temperature){
+        String type = temperature.getToUnit();
+        String fromUnit = temperature.getFromUnit();
+        float data_t = temperature.getData();
+
         if (type.equals("kelvin") && fromUnit.equals("celsius")){
             return  (data_t + 273.15f);
         }else if(type.equals("fahrenheit") && fromUnit.equals("celsius")){
@@ -24,7 +27,7 @@ public class Conversion {
         }else if(type.equals("fahrenheit") && fromUnit.equals("kelvin")){
             return ((data_t - 273.15f) * 1.8f) + 32;
         }
-        return 1.0f;
+        return data_t;
 
     }
 }
