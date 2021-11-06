@@ -21,3 +21,6 @@ Method: POST
 
 
 53.6
+
+
+>Consumption of API link: 
