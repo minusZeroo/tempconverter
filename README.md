@@ -9,7 +9,7 @@ Method: POST
 
 > Sample payload/request:
 
-```
+```JSON
 {
    "toUnit": "fahrenheit",
     "fromUnit": "celsius",
