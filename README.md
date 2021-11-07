@@ -24,3 +24,4 @@ Method: POST
 
 
 >Consumption of API link: 
+(Run on seperate instances)
