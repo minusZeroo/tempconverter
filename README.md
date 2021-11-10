@@ -1,5 +1,5 @@
 # Temperature Conversion API
-Converts across kelvin, celsius and fahrenheit
+Converts across kelvin, celsius and fahrenheit temperature 
 
 
 Endpoint: /convertTemp
