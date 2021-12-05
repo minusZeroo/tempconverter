@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body style="text-align:center">
+
+<h1>Temparature converter</h1>
+
+
+
+  <label for="temp">To : </label>
+  <select name="type" id="type">
+    <option value="kelvin">kelvin</option>
+    <option value="fahrenheit">fahrenheit</option>
+    <option value="celsius">celsius</option>
+  </select>
+  <br><br>
+   <label for="from">From: </label>
+  <select name="fromUnit" id="fromUnit">
+   <option value="kelvin">kelvin</option>
+    <option value="fahrenheit">fahrenheit</option>
+    <option value="celsius">celsius</option>
+  </select>
+    <br><br>
+	<input  id="data" name="data" placeholder="Your data" type="text" />
+  <button  onclick="saveData();">Convert</button>
+
+  <br><br>
+    <br><br>
+
+<div style="font-style:bold;" id="append-to-me"></div>
+
+
+<script>
+
+function saveData(){
+const requestBody = {
+	 fromUnit: $("#fromUnit").val(),
+	 toUnit: $("#type").val(), 
+	 data: $("#data").val()
+	 };
+$.ajax({
+     type: "POST",
+     url: "http://localhost:8080/convertTemp",
+            data: JSON.stringify(requestBody),
+            contentType: 'application/json',
+            dataType: 'json',
+     success: function(response) {
+	 //alert("RES"+response);
+     console.log(response);
+       // var title = response;
+         $('#append-to-me').html(response);
+     }
+	 });
+}
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
