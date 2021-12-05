@@ -26,4 +26,4 @@ Method: POST
 >Consumption of API link: 
 (Run on seperate instances)
 ```
->>See link to web consumption: (https://github.com/minusZeroo/tempconverter/blob/master/temp.html)
+>>See link to web consumption: [](https://github.com/minusZeroo/tempconverter/blob/master/temp.html)
