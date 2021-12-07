@@ -23,7 +23,7 @@ Method: POST
 53.6
 
 
->Consumption of API link: 
+Consumption of API link: 
 (Run on seperate instances)
 
 >See link to HTML web consumption: [HERE](https://github.com/minusZeroo/tempconverter/blob/master/temp.html)
