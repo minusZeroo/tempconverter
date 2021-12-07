@@ -23,6 +23,4 @@ Method: POST
 53.6
 
 
-Consumption of API using a HTML interface(Run on seperate instances): 
-
->See link to HTML web consumption: [HERE](https://github.com/minusZeroo/tempconverter/blob/master/temp.html)
+>Consumption of API using a HTML interface(Run on seperate instances): [HERE](https://github.com/minusZeroo/tempconverter/blob/master/temp.html)
