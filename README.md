@@ -23,6 +23,6 @@ Method: POST
 53.6
 
 
->Consumed using a HTML interface: [HERE](https://github.com/minusZeroo/tempconverter/blob/master/temp.html)
+> API consumed using a HTML interface: [HERE](https://github.com/minusZeroo/tempconverter/blob/master/temp.html)
 
 Note: run on seperate instances
