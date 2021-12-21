@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin("*")
-
 public class Conversion {
 
     @PostMapping("/convertTemp")
@@ -14,9 +13,9 @@ public class Conversion {
         String fromUnit = temperature.getFromUnit();
         float data_t = temperature.getData();
 
-        if (type.equals("kelvin") && fromUnit.equals("celsius")){
+        if (type.equals("kelvin") && fromUnit.equals("celsius")) {
             return  (data_t + 273.15f);
-        }else if(type.equals("fahrenheit") && fromUnit.equals("celsius")){
+        }else if(type.equals("fahrenheit") && fromUnit.equals("celsius")) {
             return  ((data_t*9)/5) + 32;
         }else if(type.equals("celsius") && fromUnit.equals("fahrenheit")){
             return ((data_t-32)*5) / 9;
@@ -28,6 +27,5 @@ public class Conversion {
             return ((data_t - 273.15f) * 1.8f) + 32;
         }
         return data_t;
-
     }
 }
