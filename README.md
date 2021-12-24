@@ -1,4 +1,4 @@
-# Temperature Conversion API
+# Temperature conversion API
 Converts across kelvin, celsius and fahrenheit temperature values
 
 
@@ -25,4 +25,4 @@ Method: POST
 
 > API consumed using a HTML interface: [HERE](https://github.com/minusZeroo/tempconverter/blob/master/temp.html)
 
-Note: run on seperate instances
+NB: run on seperate instances
